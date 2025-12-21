@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoft - Actividad SENA</title>
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Estilos del Encabezado (Header) */
+        .header-top {
+            background-color: #6a1b9a; /* Morado oscuro */
+            height: 40px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            font-size: 14px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 0 5px;
+            width: 150px;
+        }
+
+        .search-bar i {
+            color: #6a1b9a;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .login-btn i {
+            margin-right: 5px;
+        }
+
+        /* Estilos del Contenido Principal (Main) */
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 50vh;
+        }
+
+        .rubik-cube {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 30px;
+            /* Usaremos una imagen de placeholder para el cubo de Rubik */
+            /* El usuario debe reemplazar 'rubik-cube.png' con la imagen real */
+            background-image: url('https://i.imgur.com/g8z6g0S.png'); /* Placeholder de cubo de Rubik */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #clock {
+            font-size: 48px;
+            font-weight: bold;
+            color: #9c27b0; /* Un morado más claro para el reloj */
+            margin-top: 20px;
+        }
+
+        /* Estilos de los Iconos Flotantes (Aside) */
+        .floating-icons {
+            position: fixed;
+            right: 20px;
+            top: 30%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .floating-icons i {
+            color: #000;
+            cursor: pointer;
+        }
+
+        /* Estilos del Pie de Página (Footer) */
+        .footer-container {
+            background-color: #f8f8f8;
+            border-top: 1px solid #eee;
+            padding: 40px 50px;
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+
+        .footer-column {
+            width: 20%;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Franja Morada Superior (Header Top) -->
+    <div class="header-top"></div>
+
+    <!-- Barra de Navegación Principal (Navbar) -->
+    <header class="navbar">
+        <div class="logo">Resoft</div>
+        
+        <nav class="nav-links">
+            <a href="#">Novedades</a>
+            <a href="#">Hombre</a>
+            <a href="#">Mujer</a>
+            <a href="#">Niños</a>
+            <a href="#">Descuentos</a>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <button class="login-btn">
+            <i class="fas fa-user"></i>
+            Iniciar sesión
+        </button>
+    </header>
+
+    <!-- Contenido Principal (Main Content) -->
+    <main class="main-content">
+        <div class="rubik-cube"></div>
+        <div id="clock">12:00:00</div>
+    </main>
+
+    <!-- Iconos Flotantes (Aside) -->
+    <aside class="floating-icons">
+        <i class="fas fa-shopping-bag"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-universal-access"></i>
+    </aside>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="footer-container">
+        <div class="footer-column">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href="#">Artículos y tallas</a></li>
+                <li><a href="#">Opciones de regalo</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Pagos y facturas</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Síguenos</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Oficinas</a></li>
+                <li><a href="#">Tienda física</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Políticas</h4>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Condiciones de compra</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Configuración de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script para el Reloj -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Actualizar el reloj cada segundo
+        setInterval(updateClock, 1000);
+        
+        // Ejecutar la función inmediatamente para evitar el retraso de 1 segundo
+        updateClock();
+    </script>
+
+</body>
+</html>
